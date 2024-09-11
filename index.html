@@ -17,14 +17,9 @@
   <meta property="og:site_name" content="Schatelier" />
   <meta property="og:image" content="/images/Schatelier_beeldmerk.png">
   <meta property="og:image:secure_url" content="/images/Schatelier_beeldmerk.png">
-  <meta name="twitter:site" content="@wimpstm">
-  <meta name="twitter:creator" content="@wimpstm">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:description" content="Schatlier" />
-  <meta name="twitter:title" content="Schatelier" />
+
 
   <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -35,20 +30,23 @@
   </div>
 
   <nav class="header-nav">
+    <button aria-label="menu button" class="nav__toggle">
+      <span class="hamburger"></span>
+    </button>
     <ul id="menu">
-      <li><a href="#artworks">
+      <li><a class="nav__item" href="#artworks">
           Artworks
         </a></li>
-      <li><a href="#collections">
+      <li><a class="nav__item" href="#collections">
           Collections
         </a></li>
-      <li><a href="#projects">
+      <li><a class="nav__item" href="#projects">
           Projects
         </a></li>
-        <li><a href="#about">
+      <li><a class="nav__item" href="#about">
           Meet the artist
         </a></li>
-      <li><a href="#expo">
+      <li><a class="nav__item" href="#expo">
           Exposities
         </a></li>
     </ul>
@@ -169,21 +167,19 @@
       </div>
     </div>
 
-    <div id="imageModal" class="modal">
-      <span class="close-button">&times;</span>
-      <div class="modal-content" id="modalContent"></div>
-    </div>
-
-
-
-
-
+    
 
     <div class="home-about" id="about">
       <h2>Meet the artist</h2>
       <img class="home-about-name" src="images/leony-name.svg" alt="Leony van Schalm">
       <img class="home-about-img" src="images/Leony.jpg" alt="Leony van Schalm">
-      <p>Vanuit het intuïtieve laat ik me leiden door lijnen en structuren door opgedane vondsten uit de natuur & vervlogen tijden. De vergankelijkheid van het voorwerp transiteren naar porselein, maakt dat de vondst een functioneel, duurzaam en een eigen karakter krijgt. Duurzame grondstoffen zoals gips en klei zijn het voorwerk van het ambachtelijke proces waarin geduld, respect en tijd een vereiste zijn. Een enkel werk is voorzien van een goudlaagje (12%) en een glaslaag zodat het product ook waterdicht is bijv bij de vaasjes. Ook heb ik mij laten inspireren door grote meesters in de schilderkunst zoals Jheronimus Bosch & Rembrandt van Rhijn en door Filosoof Jaap Kruithof</p>
+      <p>Vanuit het intuïtieve laat ik me leiden door lijnen en structuren door opgedane vondsten uit de natuur &
+        vervlogen tijden. De vergankelijkheid van het voorwerp transiteren naar porselein, maakt dat de vondst een
+        functioneel, duurzaam en een eigen karakter krijgt. Duurzame grondstoffen zoals gips en klei zijn het voorwerk
+        van het ambachtelijke proces waarin geduld, respect en tijd een vereiste zijn. Een enkel werk is voorzien van
+        een goudlaagje (12%) en een glaslaag zodat het product ook waterdicht is bijv bij de vaasjes. Ook heb ik mij
+        laten inspireren door grote meesters in de schilderkunst zoals Jheronimus Bosch & Rembrandt van Rhijn en door
+        Filosoof Jaap Kruithof</p>
       <p>Geïnteresseerd in werk van Leony?<br>Mail haar en je ontvangt alle opties en prijzen</p>
       <a class="btn" href="mailto:x">Contact</a>
     </div>
@@ -224,17 +220,20 @@
       </ul>
     </div>
     </div>
-
+    <div id="imageModal" class="modal">
+      <span class="close-button">&times;</span>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
 
   </main>
 
   <footer>
-    <?php include "./footer.html";?>
 
   </footer>
 
 
   <script src="scripts.js"></script>
+
 </body>
 
 </html>
