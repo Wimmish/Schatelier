@@ -38,6 +38,10 @@ html {
 :root {
   --background-accent: #E1E0DC;
   --black: #2F2F2E;
+
+
+
+
   --blue: #103B50;
   --accent: #FF2CF5;
   --red-75: #CC6B6B;
@@ -248,7 +252,7 @@ header {
     transition: transform 300ms cubic-bezier(0.5, 0, 0.5, 1),
       -webkit-transform 300ms cubic-bezier(0.5, 0, 0.5, 1);
     width: 250px;
-    z-index: 99999999;
+    z-index: 10;
   }
 
 
@@ -600,7 +604,7 @@ figcaption {
   background-color: rgba(122, 122, 122, 0.7);
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 1000;
 
 }
 
@@ -645,7 +649,6 @@ figcaption {
   text-align: center;
   top: 15px;
   width: 40px;
-
 }
 
 
