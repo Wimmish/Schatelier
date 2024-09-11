@@ -51,4 +51,3 @@ navItems.forEach(item => {
     document.body.classList.remove('nav-open');
   });
 });
-
